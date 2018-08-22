@@ -6,6 +6,11 @@ Bibliotecas e framworks utilizados:
 
 RXjs
 
+npm install rxjs --save
+
+npm install rxjs-compat --save
+
+
 Bootstrap
 
 jQuery
