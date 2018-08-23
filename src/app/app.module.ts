@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { ConversorModule } from './conversor';
 
+
 @NgModule({
   declarations: [
     AppComponent
