@@ -22,7 +22,9 @@ export class NumeroDirective implements ControlValueAccessor {
   onTouched: any;
   onChange: any;
 
-  constructor(private el: ElementRef) {}
+  constructor(
+    private el: ElementRef
+  ) {}
 
   /**
    * Implementa evento de keyup para o elemnto da diretiva.
