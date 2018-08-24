@@ -34,7 +34,7 @@ export class ConversorComponent implements OnInit {
    * @return void
    */
   init(): void {
-  	this.conversao = new Conversao('USD', 'BRL', null);
+  	this.conversao = new Conversao('EUR', 'BRL', null);
   	this.possuiErro = false;
   }
 
@@ -52,5 +52,5 @@ export class ConversorComponent implements OnInit {
         error => this.possuiErro = true
       );
   	}
-}
+  }
 }
