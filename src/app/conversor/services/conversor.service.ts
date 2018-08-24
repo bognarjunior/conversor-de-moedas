@@ -10,7 +10,7 @@ import {
 @Injectable()
 export class ConversorService {
 
-  private readonly BASE_URL = "http://data.fixer.io/api/latest?access_key=eba7130a5b2d720ce43eb5fcddd47cc3";
+  private readonly BASE_URL = "http://data.fixer.io/api/latest?access_key=7c57d1b5368fcea2f9151b04ec84fde5";
 
   constructor(
     private http: HttpClient
@@ -23,9 +23,8 @@ export class ConversorService {
    * @return Observable<ConversaoResponse>
    */
   converter(conversao: Conversao): Observable<any> {
-  	let params = `&base=${conversao.moedaDe}&symbols=${conversao.moedaPara}`;
-  	return this.http
-      .get(this.BASE_URL + params);
+    let params = `&base=${conversao.moedaDe}&symbols=${conversao.moedaPara}`;
+  	return this.http.get(this.BASE_URL + params);
   }
 
   /**
